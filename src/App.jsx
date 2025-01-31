@@ -5,6 +5,7 @@ import WelcomeMessage from './components/WelcomeMessage';
 import bg from '../src/assets/bg.jpg';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FacilitiesAndActivities from './components/FacilitiesAndActivities';
 const App = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const App = () => {
         <Notice />
         <WelcomeMessage />
         <Courses />
+        <FacilitiesAndActivities/>
       </div>
       <Footer />
     </>
