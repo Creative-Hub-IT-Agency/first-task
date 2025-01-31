@@ -5,9 +5,9 @@ export default function Footer() {
         {/* University Info */}
         <div>
           <h3 className='text-2xl font-bold text-yellow-400 mb-3'>
-            THE UNIVERSITY OF COMILLA UNIC
+            THE UNIVERSITY OF CUMILLA UNIC
           </h3>
-          <p className='text-base leading-relaxed'>
+          <p className='text-base leading-relaxed max-w-md'>
             Academic, Trust & Administrative Bhaban: 13, Road-35, Sector-7,
             Uttara, Dhaka-1230 & 9B Polwel Carnation, Sector-8, Uttara,
             Dhaka-1230
@@ -140,7 +140,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className='mt-10 text-center text-sm border-t border-white/20 pt-4'>
+      <div className='mt-10 text-center text-sm border-t border-white/40 pt-4'>
         <p>
           © {new Date().getFullYear()} THE UNIVERSITY OF COMILLA UNIC. All
           Rights Reserved.
