@@ -15,6 +15,7 @@ export default [
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
+        require: 'true',
       },
     },
     settings: { react: { version: '18.3' } },
