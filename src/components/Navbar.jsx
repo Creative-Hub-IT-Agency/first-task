@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleMouseLeave = () => setHoveredDropdown(null);
 
   return (
-    <div className='bg-[#002742] min-h-40 py-4'>
+    <div className='bg-[#002643] min-h-40 py-4'>
       {/* upper part */}
       <ul className='flex justify-end gap-2 font-semibold text-white pr-12 uppercase text-[13px] brightness-150 border-b-[1px] pb-2'>
         <li>
@@ -55,7 +55,7 @@ const Navbar = () => {
         </li>
       </ul>
       {/* middle part */}
-      <div className='flex justify-between items-center px-20 py-4 border-b-[1px] pb-2'>
+      <div className='flex justify-between items-center px-20 py-4 border-b-[1px] pb-4'>
         <div className=''>
           <img src={logo} alt='logo' className='h-36' />
         </div>
