@@ -2,7 +2,7 @@
 
 const WelcomeMessage = () => {
     return (
-        <div className="bg-blue-800 flex gap-14 py-6 px-10">
+        <div className="bg-blue-900 flex gap-14 py-12 px-10">
             <div className="bg-white py-4 px-8 flex-1">
                 <h1 className="text-black font-bold text-3xl">Welcome to UNIC</h1>
                 <p className="text-blue-900 font-semibold text-lg my-2">Where Education Ignites Enlightenment</p>
