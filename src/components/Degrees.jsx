@@ -42,7 +42,7 @@ const Degrees = () => {
         </div>
 
         {/* Master's Degree Column */}
-        <div className="bg-white border rounded-lg">
+        <div className="bg-white border rounded-lg h-fit pb-4">
           <h2 className="bg-blue-800 text-white text-center text-lg font-semibold py-3 rounded-t-lg">MASTER’S DEGREE</h2>
           <ul className="divide-y divide-gray-300">
             {[
