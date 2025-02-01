@@ -2,7 +2,6 @@ import Banner from './components/Banner';
 import Courses from './components/Courses';
 import Notice from './components/Notice';
 import WelcomeMessage from './components/WelcomeMessage';
-import bg from '../src/assets/bg.jpg';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FacilitiesAndActivities from './components/FacilitiesAndActivities';
