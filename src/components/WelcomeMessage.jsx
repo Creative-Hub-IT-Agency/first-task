@@ -2,11 +2,11 @@
 
 const WelcomeMessage = () => {
     return (
-        <div className="bg-blue-800 lg:flex gap-14 py-6 px-10">
-            <div className="bg-white py-4 px-8 flex-1">
+        <div className="bg-blue-800 flex flex-col lg:flex-row gap-8 lg:gap-14 py-6 px-4 lg:px-8">
+            <div className="bg-white py-4 px-6 lg:px-8 flex-1">
                 <h1 className="text-black font-bold text-3xl">Welcome to UNIC</h1>
                 <p className="text-blue-900 font-semibold text-lg my-2">Where Education Ignites Enlightenment</p>
-                <p className="text-black text-lg">The mission of UNIC is to emerge as one of the leading and premier centre of higher studies in Arts, Social Science, Science, Engineering and technology. The University is providing education of high excellence to our young learners in a congenial and friendly atmosphere, and attracting brilliant students, distinguished scholars, researchers, scientists from home and abroad. Since its commencement  UNIC endeavors to accelerate students’ technological, intellectual, social and personal potentials providing them dynamic guidance and latest information about the new technologies of the world so that they can keep pace with the time and contribute to the advancement of the society.</p>
+                <p className="text-black lg:text-lg">The mission of UNIC is to emerge as one of the leading and premier centre of higher studies in Arts, Social Science, Science, Engineering and technology. The University is providing education of high excellence to our young learners in a congenial and friendly atmosphere, and attracting brilliant students, distinguished scholars, researchers, scientists from home and abroad. Since its commencement  UNIC endeavors to accelerate students’ technological, intellectual, social and personal potentials providing them dynamic guidance and latest information about the new technologies of the world so that they can keep pace with the time and contribute to the advancement of the society.</p>
             </div>
             <div className="flex-1 bg-blue-300 border-[1px] border-yellow-400 rounded-lg p-2 md:p-6">
                 <div className="mb-2 md:mb-6">

@@ -1,6 +1,6 @@
 const Degrees = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-blue-200 px-8 pb-8">
+    <div className="flex justify-center items-center min-h-screen bg-blue-200 px-4 lg:px-8 pb-8">
       <div className="overflow-hidden w-full max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
         {/* Bachelor's Degree Column */}
         <div className="border border-gray-300 bg-white rounded-lg">

@@ -3,10 +3,10 @@ import img2 from "../assets/UIP.jpeg"
 
 const FacilitiesAndActivities = () => {
     return (
-        <div className="flex justify-center items-center bg-[#316B9B] p-8">
+        <div className="flex justify-center items-center bg-[#316B9B] p-4 lg:p-8">
             <div className="flex flex-col gap-8 lg:flex-row">
                 {/* Facilities Card */}
-                <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-red-700 w-1/2">
+                <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-red-700 lg:w-1/2">
                     <div className="relative mb-4 group">
                         <img
                             src={img1}
@@ -37,7 +37,7 @@ const FacilitiesAndActivities = () => {
                 </div>
 
                 {/* Extra Curricular Activities Card */}
-                <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-red-700 w-1/2 h-fit">
+                <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-red-700 lg:w-1/2 h-fit">
                     <div className="relative mb-4 group">
                         <img
                             src={img2}
