@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import logo from '../assets/logo.svg';
 import { useState } from 'react';
+import { FaBars, FaLink } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [hoveredDropdown, setHoveredDropdown] = useState(null);
@@ -10,8 +11,442 @@ const Navbar = () => {
 
   return (
     <div className='bg-[#002643] min-h-40 py-4'>
+      <div className='flex justify-between items-center px-8 py-4 border-b-[1px] pb-4 md:hidden'>
+        <div className='flex items-center gap-4'>
+
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className='w-8 h-8 rounded-full flex justify-center items-center transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
+              <FaLink size={20} color='white' />
+            </div>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-56 p-2 shadow">
+              <li>
+                <>
+                  <a href='#'>Students</a>
+                </>
+              </li>
+              <li>
+                <>
+                  <a href='#'>Alumny</a>
+                </>
+              </li>
+              <li>
+                <>
+                  <a href='#'>E-Library</a>
+                </>
+              </li>
+              <li>
+                <>
+                  <a href='#'>Career</a>
+                </>
+              </li>
+              <li>
+                <>
+                  <a href='#'>Contact</a>
+                </>
+              </li>
+              <li>
+                <>
+                  <a href='#'>Login</a>
+                </>
+              </li>
+              <li className='lowercase'>
+                <>
+                  <a href='#'>webmail</a>
+                </>
+              </li>
+            </ul>
+          </div>
+
+          <div className=''>
+            <img src={logo} alt='logo' className='w-8 h-8' />
+          </div>
+        </div>
+
+        <div className='flex gap-2'>
+          <div className='w-8 h-8 rounded-full flex justify-center items-center p-1 bg-[#5284E8] transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
+            <FaFacebookF size={20} color='white' />
+          </div>
+          <div className='w-8 h-8 rounded-full flex justify-center items-center p-1 bg-[#46D4FE] transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
+            <FaTwitter size={20} color='white' />
+          </div>
+          <div className="dropdown dropdown-end">
+            <div tabIndex={0} role="button" className='w-8 h-8 rounded-full flex justify-center items-center transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
+              <FaBars size={20} color='white' />
+            </div>
+            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-56 p-2 shadow">
+              <li><a><div className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'>Home</div></a></li>
+              <li><a>
+                <div
+                  className='relative uppercase'
+                  onMouseEnter={() => handleMouseEnter('university')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button
+                    id='dropdownHoverButton'
+                    className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'
+                    type='button'
+                  >
+                    The University
+                    <svg
+                      className='w-2.5 h-2.5 ms-3'
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 10 6'
+                    >
+                      <path
+                        stroke='currentColor'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        d='m1 1 4 4 4-4'
+                      />
+                    </svg>
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {hoveredDropdown === 'university' && (
+                    <div
+                      id='dropdownHover'
+                      className='z-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 font-semibold normal-case'
+                    >
+                      <ul className='py-2 text-xs text-gray-700 dark:text-gray-200'>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            At a Glance
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            History
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Why Us?
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Sign out
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </a></li>
+              <li><a>
+                <div
+                  className='relative uppercase'
+                  onMouseEnter={() => handleMouseEnter('administration')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button
+                    id='dropdownHoverButton'
+                    className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold bg-blue-950'
+                    type='button'
+                  >
+                    Administration
+                    <svg
+                      className='w-2.5 h-2.5 ms-3'
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 10 6'
+                    >
+                      <path
+                        stroke='currentColor'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        d='m1 1 4 4 4-4'
+                      />
+                    </svg>
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {hoveredDropdown === 'administration' && (
+                    <div
+                      id='dropdownHover'
+                      className='z-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 font-semibold normal-case'
+                    >
+                      <ul className='py-2 text-xs text-gray-700 dark:text-gray-200'>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Admin Dashboard
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Role Management
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            User Management
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Sign out
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </a></li>
+              <li><a>
+                <div
+                  className='relative uppercase'
+                  onMouseEnter={() => handleMouseEnter('admission')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button
+                    id='dropdownHoverButton'
+                    className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'
+                    type='button'
+                  >
+                    Admission
+                    <svg
+                      className='w-2.5 h-2.5 ms-3'
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 10 6'
+                    >
+                      <path
+                        stroke='currentColor'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        d='m1 1 4 4 4-4'
+                      />
+                    </svg>
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {hoveredDropdown === 'admission' && (
+                    <div
+                      id='dropdownHover'
+                      className='z-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 font-semibold normal-case'
+                    >
+                      <ul className='py-2 text-xs text-gray-700 dark:text-gray-200'>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Apply Now
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Eligibility Criteria
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Scholarship Information
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Sign out
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </a></li>
+              <li><a>
+                <div
+                  className='relative uppercase'
+                  onMouseEnter={() => handleMouseEnter('admin')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button
+                    id='dropdownHoverButton'
+                    className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'
+                    type='button'
+                  >
+                    Admin
+                    <svg
+                      className='w-2.5 h-2.5 ms-3'
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 10 6'
+                    >
+                      <path
+                        stroke='currentColor'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        d='m1 1 4 4 4-4'
+                      />
+                    </svg>
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {hoveredDropdown === 'admin' && (
+                    <div
+                      id='dropdownHover'
+                      className='z-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 font-semibold normal-case'
+                    >
+                      <ul className='py-2 text-xs text-gray-700 dark:text-gray-200'>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Admin Panel
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Permissions
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Activity Logs
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Sign out
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </a></li>
+              <li><a>
+                <div
+                  className='relative uppercase'
+                  onMouseEnter={() => handleMouseEnter('faculty')}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button
+                    id='dropdownHoverButton'
+                    className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'
+                    type='button'
+                  >
+                    Faculty
+                    <svg
+                      className='w-2.5 h-2.5 ms-3'
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 10 6'
+                    >
+                      <path
+                        stroke='currentColor'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        d='m1 1 4 4 4-4'
+                      />
+                    </svg>
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {hoveredDropdown === 'faculty' && (
+                    <div
+                      id='dropdownHover'
+                      className='z-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 font-semibold normal-case'
+                    >
+                      <ul className='py-2 text-xs text-gray-700 dark:text-gray-200'>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Faculty Dashboard
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Course Management
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Student Records
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href='#'
+                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                          >
+                            Sign out
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* upper part */}
-      <ul className='flex justify-end gap-2 font-semibold text-white pr-12 uppercase text-[13px] brightness-150 border-b-[1px] pb-2'>
+      <ul className='hidden md:flex justify-end gap-2 font-semibold text-white pr-12 uppercase text-[13px] brightness-150 border-b-[1px] pb-2'>
         <li>
           <>
             <a href='#'>Students</a>
@@ -55,7 +490,7 @@ const Navbar = () => {
         </li>
       </ul>
       {/* middle part */}
-      <div className='flex justify-between items-center px-20 py-4 border-b-[1px] pb-4'>
+      <div className='hidden md:flex justify-between items-center px-20 py-4 border-b-[1px] pb-4'>
         <div className=''>
           <img src={logo} alt='logo' className='h-36' />
         </div>
@@ -70,13 +505,13 @@ const Navbar = () => {
       </div>
 
       {/* lower part */}
-      <div className='uppercase flex pt-2 pl-12'>
+      <div className='uppercase hidden md:flex pt-2 pl-12'>
         <div>
           <button
-            className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold'
+            className='text-white rounded-lg px-2 lg:px-5 py-2.5 text-center inline-flex items-center uppercase font-bold text-[13px] lg:text-base'
             type='button'
           >
-           Home
+            Home
           </button>
         </div>
         {/* The University Dropdown */}
@@ -87,7 +522,7 @@ const Navbar = () => {
         >
           <button
             id='dropdownHoverButton'
-            className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
+            className='text-white rounded-lg font-bold px-2 lg:px-5 py-2.5 text-center inline-flex items-center uppercase text-[13px] lg:text-base'
             type='button'
           >
             The University
@@ -160,7 +595,7 @@ const Navbar = () => {
         >
           <button
             id='dropdownHoverButton'
-            className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold'
+            className='text-white rounded-lg px-2 lg:px-5 py-2.5 text-center inline-flex items-center uppercase font-bold text-[13px] lg:text-base'
             type='button'
           >
             Administration
@@ -233,7 +668,7 @@ const Navbar = () => {
         >
           <button
             id='dropdownHoverButton'
-            className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
+            className='text-white rounded-lg font-bold px-2 lg:px-5 py-2.5 text-center inline-flex items-center uppercase text-[13px] lg:text-base'
             type='button'
           >
             Admission
@@ -306,7 +741,7 @@ const Navbar = () => {
         >
           <button
             id='dropdownHoverButton'
-            className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
+            className='text-white rounded-lg font-bold px-2 lg:px-5 py-2.5 text-center inline-flex items-center uppercase text-[13px] lg:text-base'
             type='button'
           >
             Admin
@@ -379,7 +814,7 @@ const Navbar = () => {
         >
           <button
             id='dropdownHoverButton'
-            className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
+            className='text-white rounded-lg font-bold px-2 lg:px-5 py-2.5 text-center inline-flex items-center uppercase text-[13px] lg:text-base'
             type='button'
           >
             Faculty
