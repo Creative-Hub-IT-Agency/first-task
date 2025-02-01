@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <div
-        className='min-h-screen container mx-auto px-4 md:px-8 lg:px-12 xl:px-16 bg-gray-500'
+        className='min-h-screen container mx-auto bg-black'
         // style={{
         //   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(${bg})`,
         //   backgroundSize: 'cover',
