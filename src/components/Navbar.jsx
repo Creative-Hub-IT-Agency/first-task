@@ -1,5 +1,5 @@
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
-import logo from '../assets/logo.svg';
+import logo from './logo.svg';
 import { useState } from 'react';
 import { FaBars, FaLink } from 'react-icons/fa6';
 
