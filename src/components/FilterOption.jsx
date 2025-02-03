@@ -47,8 +47,49 @@ const FilterOption = () => {
               <option className='text-slate-950 font-medium' disabled selected>
                 Select Your Department / Program
               </option>
-              <option className='text-slate-950 font-medium'>Han Solo</option>
-              <option className='text-slate-950 font-medium'>Greedo</option>
+              <option className="text-slate-950 font-medium">BBA</option>
+              <option className="text-slate-950 font-medium">B.Sc (Hon’s) in Physics</option>
+              <option className="text-slate-950 font-medium">B.Sc (Hon’s) in Chemistry</option>
+              <option className="text-slate-950 font-medium">B.Sc in Food Science And Technology</option>
+              <option className="text-slate-950 font-medium">B.Sc (Hon’s) in Mathematics</option>
+              <option className="text-slate-950 font-medium">B.Sc (Hon’s) in Statistics</option>
+              <option className="text-slate-950 font-medium">B.Sc in Electrical and Electronics Engineering</option>
+              <option className="text-slate-950 font-medium">B.Sc in Computer Science and Information Technology</option>
+              <option className="text-slate-950 font-medium">B.Sc in Civil Engineering</option>
+              <option className="text-slate-950 font-medium">B.Sc in Fashion Design and Technology</option>
+              <option className="text-slate-950 font-medium">B.Sc Engr. in Architecture</option>
+              <option className="text-slate-950 font-medium">B.Sc in Textile Engineering</option>
+              <option className="text-slate-950 font-medium">B.Sc in Mechanical Engineering</option>
+              <option className="text-slate-950 font-medium">B.A (Hon’s) in Bengali</option>
+              <option className="text-slate-950 font-medium">B.A (Hon’s) in English</option>
+              <option className="text-slate-950 font-medium">B.Ed</option>
+              <option className="text-slate-950 font-medium">L.L.B (Hon’s)</option>
+              <option className="text-slate-950 font-medium">L.L.M</option>
+              <option className="text-slate-950 font-medium">BSS (Hon’s) in Sociology and Anthropology</option>
+              <option className="text-slate-950 font-medium">B.PEd</option>
+              <option className="text-slate-950 font-medium">BSS (Hon’s) in Mass Media and Journalism</option>
+              <option className="text-slate-950 font-medium">B.A (Hon’s) in Islamic Studies</option>
+              <option className="text-slate-950 font-medium">B.A (Hon’s) in Islamic History</option>
+              <option className="text-slate-950 font-medium">Post Graduate Diploma in Library and Information Science</option>
+              <option className="text-slate-950 font-medium">BSS in Hotel Management & Tourism</option>
+              <option className="text-slate-950 font-medium">BSS (Hon’s) in Social Welfare</option>
+              <option className="text-slate-950 font-medium">B.A (Hon’s) in Public Administration & Policy Implementation</option>
+              <option className="text-slate-950 font-medium">B.A (Hon’s) in Economics</option>
+              <option className="text-slate-950 font-medium">MBA</option>
+              <option className="text-slate-950 font-medium">EMBA</option>
+              <option className="text-slate-950 font-medium">Master in Computer Application</option>
+              <option className="text-slate-950 font-medium">M.A in Bengali</option>
+              <option className="text-slate-950 font-medium">M.A in English</option>
+              <option className="text-slate-950 font-medium">M.Ed</option>
+              <option className="text-slate-950 font-medium">M.PEd</option>
+              <option className="text-slate-950 font-medium">MSS in Government and Politics</option>
+              <option className="text-slate-950 font-medium">Masters of Public Health</option>
+              <option className="text-slate-950 font-medium">Masters of Disability Management & Rehabilitation</option>
+              <option className="text-slate-950 font-medium">Masters of Environment Science</option>
+              <option className="text-slate-950 font-medium">M.A in Islamic Studies</option>
+              <option className="text-slate-950 font-medium">M.A in Islamic History</option>
+              <option className="text-slate-950 font-medium">MSS in Social Welfare</option>
+              <option className="text-slate-950 font-medium">Master of Library and Information Science</option>
             </select>
           </div>
           <div>
