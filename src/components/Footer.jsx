@@ -142,7 +142,7 @@ export default function Footer() {
       {/* Bottom Footer */}
       <div className='mt-10 text-center text-sm border-t border-white/40 pt-4'>
         <p>
-          © {new Date().getFullYear()} THE UNIVERSITY OF COMILLA UNIC. All
+          © {new Date().getFullYear()} THE UNIVERSITY OF CUMILLA UNIC. All
           Rights Reserved.
         </p>
         <div className='flex justify-center space-x-4 mt-2'>
