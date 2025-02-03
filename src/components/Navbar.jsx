@@ -1,4 +1,3 @@
-import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import logo from '/logo.png';
 import { useState } from 'react';
 import { FaBars, FaLink } from 'react-icons/fa6';
