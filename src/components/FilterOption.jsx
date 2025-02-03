@@ -47,7 +47,7 @@ const FilterOption = () => {
               <option className='text-slate-950 font-medium' disabled selected>
                 Select Your Department / Program
               </option>
-              <option className="text-slate-950 font-medium">BBA</option>
+              <option className="text-slate-950 text-xl font-semibold">BBA</option>
               <option className="text-slate-950 font-medium">B.Sc (Hon’s) in Physics</option>
               <option className="text-slate-950 font-medium">B.Sc (Hon’s) in Chemistry</option>
               <option className="text-slate-950 font-medium">B.Sc in Food Science And Technology</option>
@@ -75,7 +75,7 @@ const FilterOption = () => {
               <option className="text-slate-950 font-medium">BSS (Hon’s) in Social Welfare</option>
               <option className="text-slate-950 font-medium">B.A (Hon’s) in Public Administration & Policy Implementation</option>
               <option className="text-slate-950 font-medium">B.A (Hon’s) in Economics</option>
-              <option className="text-slate-950 font-medium">MBA</option>
+              <option className="text-slate-950 text-xl font-bold">MBA</option>
               <option className="text-slate-950 font-medium">EMBA</option>
               <option className="text-slate-950 font-medium">Master in Computer Application</option>
               <option className="text-slate-950 font-medium">M.A in Bengali</option>
