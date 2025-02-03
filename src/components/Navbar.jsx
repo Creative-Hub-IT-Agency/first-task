@@ -70,12 +70,6 @@ const Navbar = () => {
         </div>
 
         <div className='flex items-center gap-2'>
-          <div className='w-6 h-6 rounded-full flex justify-center items-center p-1 bg-[#5284E8] transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
-            <FaFacebookF size={15} color='white' />
-          </div>
-          <div className='w-6 h-6 rounded-full flex justify-center items-center p-1 bg-[#46D4FE] transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
-            <FaTwitter size={15} color='white' />
-          </div>
           <div className='dropdown dropdown-end text-sm'>
             <div
               tabIndex={0}
@@ -93,6 +87,14 @@ const Navbar = () => {
                   <div className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'>
                     Home
                   </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/degree-verification'
+                  className='text-white rounded-lg font-bold px-3 py-2.5 text-center inline-flex items-center uppercase bg-blue-950 w-[85%] mx-auto -mb-4'
+                >
+                  Degree Verification
                 </a>
               </li>
               <li>
@@ -470,6 +472,73 @@ const Navbar = () => {
                   </div>
                 </a>
               </li>
+              <li>
+                <a>
+                  <div
+                    className='relative uppercase'
+                    onMouseEnter={() => handleMouseEnter('faculty')}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <button
+                      id='dropdownHoverButton'
+                      className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'
+                      type='button'
+                    >
+                      Faculty
+                      <svg
+                        className='w-2.5 h-2.5 ms-3'
+                        aria-hidden='true'
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 10 6'
+                      >
+                        <path
+                          stroke='currentColor'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
+                          d='m1 1 4 4 4-4'
+                        />
+                      </svg>
+                    </button>
+
+                    {/* Dropdown menu */}
+                    {hoveredDropdown === 'faculty' && (
+                      <div
+                        id='dropdownHover'
+                        className='z-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 font-semibold normal-case'
+                      >
+                        <ul className='py-2 text-xs text-gray-700 dark:text-gray-200'>
+                          <li>
+                            <a
+                              href='#'
+                              className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                            >
+                              Faculty Dashboard
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href='#'
+                              className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                            >
+                              Course Management
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href='#'
+                              className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:no-underline'
+                            >
+                              Student Records
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -521,7 +590,7 @@ const Navbar = () => {
         </li>
       </ul>
       {/* middle part */}
-      <div className='hidden lg:flex justify-between items-center pl-8 pr-20 pt-2'>
+      <div className='hidden lg:flex justify-between items-center pl-8 pr-8 pt-2'>
         <div className='uppercase flex font-sm xl:font-base justify-center items-center pt-2'>
           <div className=''>
             <img src={logo} alt='logo' className='h-16 ' />
@@ -899,13 +968,30 @@ const Navbar = () => {
             )}
           </div>
         </div>
+        {/* degree verification */}
         <div className='hidden xl:flex gap-2'>
-          <div className='w-8 h-8 rounded-full flex justify-center items-center p-1 bg-[#5284E8] transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
-            <FaFacebookF size={20} color='white' />
-          </div>
-          <div className='w-8 h-8 rounded-full flex justify-center items-center p-1 bg-[#46D4FE] transition-all duration-100 ease-linear cursor-pointer hover:scale-105'>
-            <FaTwitter size={20} color='white' />
-          </div>
+          <button
+            id='dropdownHoverButton'
+            className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
+            type='button'
+          >
+            Degree Verification
+            <svg
+              className='w-2.5 h-2.5 ms-3'
+              aria-hidden='true'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 10 6'
+            >
+              <path
+                stroke='currentColor'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
+                d='m1 1 4 4 4-4'
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
