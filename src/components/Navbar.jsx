@@ -1,6 +1,7 @@
 import logo from '/logo.png';
 import { useState } from 'react';
 import { FaBars, FaLink } from 'react-icons/fa6';
+import { Link } from 'react-router';
 
 const Navbar = () => {
   const [hoveredDropdown, setHoveredDropdown] = useState(null);
@@ -89,12 +90,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href='/degree-verification'
+                <Link
+                  to='/degree-verification'
                   className='text-white rounded-lg font-bold px-3 py-2.5 text-center inline-flex items-center uppercase bg-blue-950 w-[85%] mx-auto -mb-4'
                 >
                   Degree Verification
-                </a>
+                </Link>
               </li>
               <li>
                 <a>
@@ -974,22 +975,24 @@ const Navbar = () => {
             className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
             type='button'
           >
-            Degree Verification
-            <svg
-              className='w-2.5 h-2.5 ms-3'
-              aria-hidden='true'
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 10 6'
-            >
-              <path
-                stroke='currentColor'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='m1 1 4 4 4-4'
-              />
-            </svg>
+            <Link to='/degree-verification' className='flex no-underline items-center'>
+              Degree Verification
+              <svg
+                className='w-2.5 h-2.5 ms-3'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 10 6'
+              >
+                <path
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='m1 1 4 4 4-4'
+                />
+              </svg>
+            </Link>
           </button>
         </div>
       </div>
