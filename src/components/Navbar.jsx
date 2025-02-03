@@ -65,7 +65,9 @@ const Navbar = () => {
           </div>
 
           <div className=''>
-            <img src={logo} alt='logo' className='w-12 h-12' />
+            <Link to='/'>
+              <img src={logo} alt='logo' className='w-12 h-12' />
+            </Link>
           </div>
         </div>
 
@@ -83,11 +85,11 @@ const Navbar = () => {
               className='dropdown-content menu bg-base-100 rounded-box z-[1]  w-56 p-2 shadow'
             >
               <li>
-                <a>
+                <Link to='/'>
                   <div className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'>
                     Home
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -593,15 +595,17 @@ const Navbar = () => {
       <div className='hidden lg:flex justify-between items-center pl-8 pr-8 pt-2'>
         <div className='uppercase flex font-sm xl:font-base justify-center items-center pt-2'>
           <div className=''>
-            <img src={logo} alt='logo' className='h-16 ' />
+            <Link to='/'>
+              <img src={logo} alt='logo' className='h-16 ' />
+            </Link>
           </div>
           <div>
-            <button
-              className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold'
+            <Link to='/'
+              className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold !no-underline'
               type='button'
             >
               Home
-            </button>
+            </Link>
           </div>
           {/* The University Dropdown */}
           <div
@@ -975,7 +979,10 @@ const Navbar = () => {
             className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase'
             type='button'
           >
-            <Link to='/degree-verification' className='flex no-underline items-center'>
+            <Link
+              to='/degree-verification'
+              className='flex !no-underline items-center'
+            >
               Degree Verification
               <svg
                 className='w-2.5 h-2.5 ms-3'

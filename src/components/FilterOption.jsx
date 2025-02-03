@@ -19,7 +19,7 @@ const FilterOption = () => {
   return (
     <div className='py-10 px-4 bg-white flex justify-center items-center flex-col'>
       <div>
-        <h2 className='text-4xl uppercase py-5 px-4 bg-[#002643] font-bold inline-block rounded-md text-white w-full'>
+        <h2 className='text-4xl uppercase py-5 px-4 bg-[#002643] font-bold inline-block rounded-md text-white w-full text-center'>
           Degree Verification
         </h2>
         <div className='mt-10 space-y-5'>
