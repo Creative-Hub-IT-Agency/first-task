@@ -70,8 +70,15 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        {/* degree verification */}
 
-  
+        <Link
+          to='/degree-verification'
+          className='text-white rounded-lg text-sm  font-bold text-center inline-flex items-center uppercase ml-14 !no-underline'
+        >
+          Degree Verification
+        </Link>
+
         <div className='flex items-center gap-2'>
           <div className='dropdown dropdown-end text-sm'>
             <div
@@ -593,7 +600,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <Link to='/'
+            <Link
+              to='/'
               className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold !no-underline'
               type='button'
             >
