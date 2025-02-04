@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleMouseLeave = () => setHoveredDropdown(null);
 
   return (
-    <div className='bg-[ py-4'>
+    <div className='bg-[#002643] py-4'>
       {/* small screen navbar */}
       <div className='flex justify-between items-center px-4 py-4 pb-4 lg:hidden'>
         <div className='flex items-center gap-2'>
