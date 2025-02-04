@@ -1,4 +1,4 @@
-import logo from '/logo.png';
+import logo from '/logo.jpeg';
 import { useState } from 'react';
 import { FaBars, FaLink } from 'react-icons/fa6';
 import { Link } from 'react-router';
@@ -70,6 +70,14 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        {/* degree verification */}
+
+        <Link
+          to='/degree-verification'
+          className='text-white rounded-lg text-sm  font-bold text-center inline-flex items-center uppercase ml-14 !no-underline'
+        >
+          Degree Verification
+        </Link>
 
         <div className='flex items-center gap-2'>
           <div className='dropdown dropdown-end text-sm'>
@@ -89,14 +97,6 @@ const Navbar = () => {
                   <div className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'>
                     Home
                   </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/degree-verification'
-                  className='text-white rounded-lg font-bold px-3 py-2.5 text-center inline-flex items-center uppercase bg-blue-950 w-[85%] mx-auto -mb-4'
-                >
-                  Degree Verification
                 </Link>
               </li>
               <li>
@@ -596,11 +596,12 @@ const Navbar = () => {
         <div className='uppercase flex font-sm xl:font-base justify-center items-center pt-2'>
           <div className=''>
             <Link to='/'>
-              <img src={logo} alt='logo' className='h-16 ' />
+              <img src={logo} alt='logo' className='h-20' />
             </Link>
           </div>
           <div>
-            <Link to='/'
+            <Link
+              to='/'
               className='text-white rounded-lg px-5 py-2.5 text-center inline-flex items-center uppercase font-bold !no-underline'
               type='button'
             >
