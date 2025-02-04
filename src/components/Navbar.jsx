@@ -1,4 +1,4 @@
-import logo from '/logo.png';
+import logo from '/logo.jpeg';
 import { useState } from 'react';
 import { FaBars, FaLink } from 'react-icons/fa6';
 import { Link } from 'react-router';
@@ -596,7 +596,7 @@ const Navbar = () => {
         <div className='uppercase flex font-sm xl:font-base justify-center items-center pt-2'>
           <div className=''>
             <Link to='/'>
-              <img src={logo} alt='logo' className='h-16 ' />
+              <img src={logo} alt='logo' className='h-20' />
             </Link>
           </div>
           <div>
