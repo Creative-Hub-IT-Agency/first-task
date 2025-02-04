@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleMouseLeave = () => setHoveredDropdown(null);
 
   return (
-    <div className='bg-[#002643] py-4'>
+    <div className='bg-[ py-4'>
       {/* small screen navbar */}
       <div className='flex justify-between items-center px-4 py-4 pb-4 lg:hidden'>
         <div className='flex items-center gap-2'>
@@ -71,6 +71,7 @@ const Navbar = () => {
           </div>
         </div>
 
+  
         <div className='flex items-center gap-2'>
           <div className='dropdown dropdown-end text-sm'>
             <div
@@ -89,14 +90,6 @@ const Navbar = () => {
                   <div className='text-white rounded-lg font-bold px-5 py-2.5 text-center inline-flex items-center uppercase bg-blue-950'>
                     Home
                   </div>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/degree-verification'
-                  className='text-white rounded-lg font-bold px-3 py-2.5 text-center inline-flex items-center uppercase bg-blue-950 w-[85%] mx-auto -mb-4'
-                >
-                  Degree Verification
                 </Link>
               </li>
               <li>
