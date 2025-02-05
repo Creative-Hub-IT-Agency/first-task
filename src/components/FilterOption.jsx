@@ -33,8 +33,7 @@ const FilterOption = () => {
     try {
       const response = await axios.get(`https://first-task-server-side.vercel.app/allStudents/${rollNumber}`);
 
-      if (response?.statusText === 'OK') {
-        console.log(response);
+      if (response?.status) {
         navigate(`/studentProfile/${rollNumber}`);
       }
 

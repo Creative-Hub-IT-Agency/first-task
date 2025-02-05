@@ -16,7 +16,7 @@ const StudentProfile = () => {
                 const response = await axios.get(`https://first-task-server-side.vercel.app/allStudents/${rollNumber}`);
 
                 if (response.status === 200) {
-                    console.log(response.data);
+                    // console.log(response.data);
                     setStudentInfo(response.data);
                 }
             } catch (error) {
@@ -93,7 +93,6 @@ const StudentProfile = () => {
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                     </>
                 )}
