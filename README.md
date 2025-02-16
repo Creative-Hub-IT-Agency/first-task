@@ -1,9 +1,9 @@
 ## First Project of Creative Hub IT Agency
 
 ## Technology Used
-- React
-- React Router 
-- Tailwind CSS
+- React v18
+- React Router v18
+- Tailwind CSS v3.4
 
 ## Live URL
 - [Custom Domain](https://theunicedu.org)
